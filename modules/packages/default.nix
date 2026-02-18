@@ -1,0 +1,12 @@
+{
+  flake.modules.homeManager.base =
+    { pkgs, ... }:
+    {
+      home.packages = with pkgs; [
+        jq
+        nixd
+        nixfmt
+        procs
+      ];
+    };
+}
