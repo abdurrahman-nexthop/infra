@@ -38,7 +38,7 @@ topLevel: {
               check-mail-cmd = "gmi sync -C ${maildirBasePath}/Nexthop && notmuch new";
               copy-to = "";
               query-map = "${query-map}";
-              source = "notmuch://${maildirBasePath}";
+              source = "notmuch://";
               folders-exclude = "mail";
             };
         };
