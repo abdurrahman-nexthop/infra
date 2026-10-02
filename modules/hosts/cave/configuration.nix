@@ -1,9 +1,11 @@
 {
-  flake.modules.nixos."host/cave" = {
-    services.openssh.enable = true;
-    environment.enableAllTerminfo = true;
-    security.sudo.wheelNeedsPassword = false;
-    nixpkgs.config.allowUnfree = true;
-    networking.firewall.allowedTCPPorts = [ 8080 ];
-  };
+  flake.modules.nixos."host/cave" =
+    { pkgs, ... }:
+    {
+      services.openssh.enable = true;
+      environment.systemPackages = [ pkgs.ghostty.terminfo ];
+      security.sudo.wheelNeedsPassword = false;
+      nixpkgs.config.allowUnfree = true;
+      networking.firewall.allowedTCPPorts = [ 8080 ];
+    };
 }
