@@ -48,11 +48,13 @@ topLevel: {
         gpg.enable = true;
         notmuch = {
           enable = true;
-          new.tags = [ ];
-          search.excludeTags = [
-            "trash"
-            "spam"
-          ];
+          settings = {
+            new.tags = [ ];
+            search.exclude_tags = [
+              "trash"
+              "spam"
+            ];
+          };
         };
         lieer.enable = true;
       };
