@@ -1,6 +1,6 @@
 topLevel: {
   flake.modules.homeManager.dev =
-    { config, pkgs, ... }:
+    { config, ... }:
     {
       programs.git = {
         enable = true;
@@ -15,11 +15,6 @@ topLevel: {
             confirm = "auto";
             identity = "Nexthop";
           };
-          credential = builtins.listToAttrs (
-            map (
-              host: pkgs.lib.nameValuePair host { username = "${config.home.username}-nexthop"; }
-            ) config.programs.gh.gitCredentialHelper.hosts
-          );
         };
       };
     };
