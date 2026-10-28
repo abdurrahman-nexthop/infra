@@ -39,6 +39,11 @@
       url = "github:abuibrahim/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    rex = {
+      url = "https://pkgs.superlogical.com/rex/nix/snapshot.tar.gz";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./modules);
