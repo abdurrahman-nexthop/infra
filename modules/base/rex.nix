@@ -10,4 +10,12 @@
       accounts.abdurrahman.principals = [ "tailscale:ruslan@babayev.com" ];
     };
   };
+
+  flake.modules.homeManager.base =
+    { lib, osConfig, ... }:
+    {
+      programs.zsh.initContent = ''
+        source <(${lib.getExe osConfig.services.rex.package} completion zsh)
+      '';
+    };
 }
