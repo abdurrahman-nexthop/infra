@@ -39,6 +39,7 @@
           }
         ];
         settings = {
+          theme = "base16_terminal";
           editor = {
             lsp.display-inlay-hints = true;
             color-modes = true;

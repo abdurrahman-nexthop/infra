@@ -1,25 +1,5 @@
 {
   "nodes": {
-    "catppuccin": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1793368344,
-        "narHash": "sha256-ojN7KpXLYv6NgJ2OMn7cPioc46g7UB1pd4tBf//3S1U=",
-        "owner": "catppuccin",
-        "repo": "nix",
-        "rev": "feac189528d08ca7c46bf1605d84b78ea5fe8263",
-        "type": "github"
-      },
-      "original": {
-        "owner": "catppuccin",
-        "repo": "nix",
-        "type": "github"
-      }
-    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -270,11 +250,11 @@
         "nixvim": "nixvim_2"
       },
       "locked": {
-        "lastModified": 1793132901,
-        "narHash": "sha256-l+7zIdUCdaQ3/DUmyBa7NCxOFq5EnISQQCmnjEBD1F4=",
+        "lastModified": 1794283530,
+        "narHash": "sha256-dXlJgikCBcMw2L02gYGYzgShWjK+xtfWocKpkbkOdLA=",
         "owner": "abuibrahim",
         "repo": "nixvim",
-        "rev": "90bdf6ed176ed61a23212104d618808cdc8f4bfb",
+        "rev": "23702e6bb933cf3d1f311ef25f2e78f500bc29c7",
         "type": "github"
       },
       "original": {
@@ -325,7 +305,6 @@
     },
     "root": {
       "inputs": {
-        "catppuccin": "catppuccin",
         "flake-parts": "flake-parts",
         "git-hooks": "git-hooks",
         "home-manager": "home-manager",
