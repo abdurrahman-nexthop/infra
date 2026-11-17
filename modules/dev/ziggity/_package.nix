@@ -2,7 +2,7 @@
   lib,
   stdenv,
   fetchFromGitHub,
-  zig_0_16,
+  zig_0_17,
   git,
   bash,
   coreutils,
@@ -12,23 +12,23 @@
 }:
 
 let
-  zig = zig_0_16;
+  zig = zig_0_17;
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "ziggity";
-  version = "0.53.0";
+  version = "0.62.0";
 
   src = fetchFromGitHub {
     owner = "simoarpe";
     repo = "ziggity";
     tag = "v${finalAttrs.version}";
-    hash = "sha256-9AL4M3aUSXgBzMs/hkWAn5k5FuqIUetdWNw9C7XNXcg=";
+    hash = "sha256-QnG99z3v9Eba3XAfH0+SSsDpp0D2UyQyIGDl00yW5wg=";
   };
 
   zigDeps = zig.fetchDeps {
     inherit (finalAttrs) src pname version;
     fetchAll = true;
-    hash = "sha256-pe34plcSfNsvYytU/Gps7cPSUbyd2octV3/Fg9H9qcY=";
+    hash = "sha256-OjvuVDDu5l6pxx0Yew0TxqZQ6OsnPeU7x3ZMfnvhdLU=";
   };
 
   postPatch = ''
