@@ -35,6 +35,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    neorex = {
+      url = "github:abuibrahim/neorex/integration";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     rex = {
       url = "https://pkgs.superlogical.com/rex/nix/snapshot.tar.gz";
       inputs.nixpkgs.follows = "nixpkgs";

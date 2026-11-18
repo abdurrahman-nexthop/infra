@@ -32,6 +32,22 @@
         "type": "github"
       }
     },
+    "flake-compat_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1696426674,
+        "narHash": "sha256-kvjfFW7WAETZlt09AgDn1MrtKzP7t90Vf7vypd3OL1U=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "0f9255e01c2351cc7d116c072cb317785dd33b33",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
@@ -97,7 +113,7 @@
     },
     "flake-utils": {
       "inputs": {
-        "systems": "systems_2"
+        "systems": "systems_3"
       },
       "locked": {
         "lastModified": 1791914995,
@@ -187,6 +203,28 @@
         "type": "github"
       }
     },
+    "neorex": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "zig-overlay": "zig-overlay"
+      },
+      "locked": {
+        "lastModified": 1794987079,
+        "narHash": "sha256-qsG6674kzqN6bY9hcTgf0k7HYsWhQv3bXAZ/ZkIWn4o=",
+        "owner": "abuibrahim",
+        "repo": "neorex",
+        "rev": "bfa0b7ec67cfaf234b960f347679f949475d59b6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "abuibrahim",
+        "ref": "integration",
+        "repo": "neorex",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1794537146,
@@ -225,7 +263,7 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "systems": "systems"
+        "systems": "systems_2"
       },
       "locked": {
         "lastModified": 1794408140,
@@ -250,11 +288,11 @@
         "nixvim": "nixvim_2"
       },
       "locked": {
-        "lastModified": 1794513366,
-        "narHash": "sha256-MWBEOdJ5yYYDM4y12Q+Is+T4PIvE+2+XkLMbErnYVQ4=",
+        "lastModified": 1794967783,
+        "narHash": "sha256-5tz44GKy4OGwo42S01hJGpN/6FK9ABi+xuOEG1z0dBI=",
         "owner": "abuibrahim",
         "repo": "nixvim",
-        "rev": "74eedc0825b2eeb21ffef6c705116431c4c23a12",
+        "rev": "709f91c595856331792cc790f40f6543d5682c1b",
         "type": "github"
       },
       "original": {
@@ -270,7 +308,7 @@
           "nixvim-config",
           "nixpkgs"
         ],
-        "systems": "systems_3"
+        "systems": "systems_4"
       },
       "locked": {
         "lastModified": 1792203519,
@@ -310,6 +348,7 @@
         "home-manager": "home-manager",
         "import-tree": "import-tree",
         "make-shell": "make-shell",
+        "neorex": "neorex",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
         "nixvim-config": "nixvim-config",
@@ -318,6 +357,22 @@
       }
     },
     "systems": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_2": {
       "flake": false,
       "locked": {
         "lastModified": 1791244623,
@@ -334,7 +389,7 @@
         "type": "github"
       }
     },
-    "systems_2": {
+    "systems_3": {
       "locked": {
         "lastModified": 1681028828,
         "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
@@ -349,7 +404,7 @@
         "type": "github"
       }
     },
-    "systems_3": {
+    "systems_4": {
       "flake": false,
       "locked": {
         "lastModified": 1791244623,
@@ -381,6 +436,29 @@
       "original": {
         "owner": "numtide",
         "repo": "treefmt-nix",
+        "type": "github"
+      }
+    },
+    "zig-overlay": {
+      "inputs": {
+        "flake-compat": "flake-compat_3",
+        "nixpkgs": [
+          "neorex",
+          "nixpkgs"
+        ],
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1793967411,
+        "narHash": "sha256-K9rCPtfNMuTyPF63MIL9f5EQtTI3m+cks1JnPDaCQAs=",
+        "owner": "mitchellh",
+        "repo": "zig-overlay",
+        "rev": "0400891e93f4bdb654f051c915d9099b3a28e3c2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mitchellh",
+        "repo": "zig-overlay",
         "type": "github"
       }
     }
