@@ -211,11 +211,11 @@
         "zig-overlay": "zig-overlay"
       },
       "locked": {
-        "lastModified": 1795130103,
-        "narHash": "sha256-adPqj7uxq8dRqBnsosNBJ1/MS/LQBu5bwn5mi11WYfc=",
+        "lastModified": 1795502073,
+        "narHash": "sha256-yQeIv4o6ec86Av5+E6VqXisqsjhHjmY0QXfsHB3WGvw=",
         "owner": "abuibrahim",
         "repo": "neorex",
-        "rev": "cae72290b33d63c9513c2772e88796f567d24f8e",
+        "rev": "ea02a1a6daa5f54fdc33f2ba58892246baf0aa50",
         "type": "github"
       },
       "original": {

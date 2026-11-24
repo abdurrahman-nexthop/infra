@@ -11,7 +11,7 @@
       neorex = inputs.neorex.packages.${pkgs.stdenv.hostPlatform.system}.default;
       neovim = config.programs.nixvim.build.package;
       nvim = pkgs.writeShellScriptBin "nvim" ''
-        if [ -n "$REX_SESSION" ] && [ -t 0 ]; then
+        if [ -n "$REX_BLOCK" ] && [ -t 0 ]; then
           PATH=${neovim}/bin:$PATH exec ${neorex}/bin/neorex "$@"
         fi
         exec ${neovim}/bin/nvim "$@"
