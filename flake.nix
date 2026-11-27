@@ -36,7 +36,7 @@
     };
 
     neorex = {
-      url = "github:abuibrahim/neorex/integration";
+      url = "github:abuibrahim/neorex";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
